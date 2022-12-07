@@ -1,0 +1,46 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Lato;
+    src: url(lib/assets/fonts/Lato/Lato-regular.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    font-weight: 700;
+    src: url(lib/assets/fonts/Lato/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    font-weight: 900;
+    src: url(lib/assets/fonts/Lato/Lato-Black.ttf);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        animation-delay: 0.01ms !important;
+    }
+}
+
+html, body {
+    @apply w-screen h-screen overflow-hidden;
+    font-family: Lato, "Helvetica Neue", sans-serif !important;
+
+}
+
+body {
+    /*@apply bg-surface-50 dark:bg-surface-900*/
+    background-image: linear-gradient(120deg, #c4eeff, #ffd9dd);
+}
+
+.dark body {
+    background-image: linear-gradient(120deg, midnightblue, #49246d);
+}
+
